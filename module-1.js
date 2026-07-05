@@ -1,0 +1,9 @@
+// single line
+
+/*
+multi line
+*/
+
+console.log("Hello World!");
+console.log(2+2);
+console.log(true);
