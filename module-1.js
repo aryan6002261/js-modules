@@ -1,7 +1,7 @@
-// ==========================================
-// JavaScript Module 1
-// Topic: Your First JavaScript Program
-// ==========================================
+// ===============================
+// Module 1/20 - JavaScript Basics
+// Topic: My First JavaScript Program
+// ===============================
 
 // ------------------------------------------
 // Single-Line Comment
