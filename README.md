@@ -10,37 +10,6 @@ Whether you're a beginner or revising concepts, these modules are organized to b
 
 ---
 
-## 🎯 What You'll Learn
-
-- JavaScript Basics
-- Variables and Data Types
-- Operators
-- Conditionals
-- Loops
-- Functions
-- Arrays
-- Objects
-- Strings
-- Numbers
-- Dates
-- DOM Manipulation
-- Events
-- Error Handling
-- ES6+ Features
-- Modules
-- Asynchronous JavaScript
-- Fetch API
-- Classes & OOP
-- Closures
-- Higher-Order Functions
-- Promises
-- Async/Await
-- JSON
-- Local Storage
-- And more...
-
----
-
 ## 📚 Learning Approach
 
 Each topic contains:
