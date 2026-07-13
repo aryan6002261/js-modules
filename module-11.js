@@ -1,86 +1,188 @@
-// select element by ID
-let title = document.getElementById('title');
-console.log(title); // Output: <h1 id="title">Hello World</h1>
+// ===============================
+// Module 11/20 - JavaScript Basics
+// Topic: DOM Manipulation
+// ===============================
 
-// select element by class name
-let items = document.getElementsByClassName('item');
-console.log(items); // Output: HTMLCollection of elements with class "item"
 
-// select element by tag name
-let paragraphs = document.getElementsByTagName('p');
-console.log(paragraphs); // Output: HTMLCollection of <p> elements
+// Selecting Elements
+console.log("Selecting Elements:");
 
-// query selector
-let firstItem = document.querySelector('.item');
-console.log(firstItem); // Output: <li class="item">Item 1</li>
+let title = document.getElementById("title");
+let items = document.getElementsByClassName("item");
+let paragraphs = document.getElementsByTagName("p");
+let firstItem = document.querySelector(".item");
+let allItems = document.querySelectorAll(".item");
 
-// query selector all
-let allItems = document.querySelectorAll('.item');
-console.log(allItems); // Output: NodeList of elements with class "item"
+console.log(title);
+console.log(items);
+console.log(paragraphs);
+console.log(firstItem);
+console.log(allItems);
 
-// change text content
+
+// Changing Text Content
+console.log("\nChanging Text:");
+
 title.textContent = "Hello JavaScript";
-console.log(title.textContent); // Output: Hello JavaScript
-title.innerHTML = "<span>Hello JavaScript</span>";
-console.log(title.innerHTML); // Output: <span>Hello JavaScript</span>
+console.log(title.textContent);
 
-// changing styles
+title.innerHTML = "<span>Hello JavaScript</span>";
+console.log(title.innerHTML);
+
+
+// Styling Elements
+console.log("\nChanging Styles:");
+
 title.style.color = "blue";
-title.style.fontSize = "24px";
 title.style.backgroundColor = "yellow";
+title.style.fontSize = "24px";
 title.style.padding = "10px";
 title.style.border = "2px solid black";
 title.style.borderRadius = "5px";
 title.style.textAlign = "center";
 
-// changing attributes
-let photo = document.getElementById('photo');
+console.log(title.style);
+
+
+// Working with Attributes
+console.log("\nAttributes:");
+
+let photo = document.getElementById("photo");
+
 photo.src = "new-image.jpg";
 photo.alt = "New Image";
 
-photo.setAttribute('title', 'This is a new image');
-photo.removeAttribute('alt');
-console.log(photo.getAttribute('title')); // Output: This is a new image
+photo.setAttribute("title", "Profile Image");
 
-// creating new elements
-let newItem = document.createElement('li');
+console.log(photo.getAttribute("title"));
+
+photo.removeAttribute("alt");
+
+console.log(photo);
+
+
+// Creating Elements
+console.log("\nCreating Elements:");
+
+let newItem = document.createElement("li");
+
 newItem.textContent = "Item 4";
 newItem.className = "item";
-let list = document.getElementById('list');
+
+console.log(newItem);
+
+
+// Appending Elements
+console.log("\nAppending Elements:");
+
+let list = document.getElementById("list");
+
 list.appendChild(newItem);
 
-// removing elements
-let itemToRemove = document.querySelector('.item');
-list.removeChild(itemToRemove); // Removes the first item with class "item" from the list
+console.log(list);
 
-let oldParagraph = document.getElementsByTagName('p')[0];
-oldParagraph.remove(); // Removes the first <p> element from the DOM
 
-// appending elements
-let newParagraph = document.createElement('p');
-newParagraph.textContent = "This is a new paragraph.";
-document.body.appendChild(newParagraph); // Appends the new paragraph to the body of the document
+// Removing Elements
+console.log("\nRemoving Elements:");
 
-// DOM navigation
-let parent = document.getElementById('list');
-console.log(parent.children); // Output: HTMLCollection of <li> elements within the list
-console.log(parent.firstElementChild); // Output: <li class="item">Item 1</li>
-console.log(parent.lastElementChild); // Output: <li class="item">Item 4</li>
-console.log(parent.parentElement); // Output: <div id="container">...</div>
+let firstListItem = document.querySelector(".item");
 
-// class manipulation
-let firstItemClass = document.querySelector('.item');
-firstItemClass.classList.add('highlight');
+firstListItem.remove();
 
-firstItemClass.classList.remove('item');
+let firstParagraph = document.querySelector("p");
 
-firstItemClass.classList.toggle('highlight'); // Toggles the 'highlight' class on the first item
+if (firstParagraph) {
+    firstParagraph.remove();
+}
 
-firstItemClass.classList.replace('highlight', 'active'); // Replaces 'highlight' class with 'active' class
+console.log(list);
 
-firstItemClass.classList.contains('active'); // Returns true if 'active' class is present, false otherwise
 
-firstItemClass.classList.item(0); // Returns the first class name of the element
-firstItemClass.classList.length; // Returns the number of classes on the element
-firstItemClass.classList.value; // Returns a string of all class names on the element
-firstItemClass.classList.toString(); // Returns a string representation of the class list
+// Replacing Elements
+console.log("\nReplacing Elements:");
+
+let replacement = document.createElement("li");
+
+replacement.textContent = "New Item";
+
+if (list.firstElementChild) {
+    list.replaceChild(replacement, list.firstElementChild);
+}
+
+console.log(list);
+
+
+// DOM Navigation
+console.log("\nDOM Navigation:");
+
+console.log(list.children);
+console.log(list.firstElementChild);
+console.log(list.lastElementChild);
+console.log(list.parentElement);
+console.log(list.nextElementSibling);
+console.log(list.previousElementSibling);
+
+
+// Class Manipulation
+console.log("\nClass Manipulation:");
+
+let element = document.querySelector(".item");
+
+if (element) {
+
+    element.classList.add("highlight");
+
+    console.log(element.className);
+
+    element.classList.remove("highlight");
+
+    element.classList.toggle("active");
+
+    console.log(element.classList.contains("active"));
+
+    element.classList.replace("active", "selected");
+
+    console.log(element.className);
+
+    console.log(element.classList.item(0));
+    console.log(element.classList.length);
+    console.log(element.classList.value);
+}
+
+
+// Getting & Setting Values
+console.log("\nInput Values:");
+
+let input = document.getElementById("username");
+
+if (input) {
+
+    input.value = "John Doe";
+
+    console.log(input.value);
+}
+
+
+// Document Information
+console.log("\nDocument Information:");
+
+console.log(document.title);
+console.log(document.URL);
+console.log(document.domain);
+console.log(document.body);
+console.log(document.head);
+
+
+// Summary
+console.log("\nSummary:");
+
+console.log("getElementById() → Select by ID");
+console.log("getElementsByClassName() → HTMLCollection");
+console.log("getElementsByTagName() → HTMLCollection");
+console.log("querySelector() → First matching element");
+console.log("querySelectorAll() → NodeList");
+console.log("createElement() → Create new element");
+console.log("appendChild() → Add element");
+console.log("remove() → Delete element");
+console.log("replaceChild() → Replace element");
+console.log("classList → Manage CSS classes");

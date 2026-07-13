@@ -1,56 +1,251 @@
-// global scope
+// ===============================
+// Module 10/20 - JavaScript Basics
+// Topic: Scope
+// ===============================
+
+
+// Global Scope
 let globalVar = "I am a global variable";
 
-function myFunction() {
-    // function scope
-    let functionVar = "I am a function variable";
-    console.log(globalVar); // Output: I am a global variable
-    console.log(functionVar); // Output: I am a function variable
+console.log("Global Scope:");
+
+console.log(globalVar);
+
+
+// Function Scope
+console.log("\nFunction Scope:");
+
+function showFunctionScope() {
+    let functionVar = "I am inside a function";
+
+    console.log(globalVar);
+    console.log(functionVar);
 }
+
+showFunctionScope();
+
+
+// Block Scope
+console.log("\nBlock Scope:");
 
 if (true) {
-    // block scope
-    let blockVar = "I am a block variable";
-    var varVar = "I am a function variable declared with var";
-    console.log(globalVar); // Output: I am a global variable
-    console.log(functionVar); // Output: ReferenceError: functionVar is not defined
-    console.log(blockVar); // Output: I am a block variable
-    console.log(varVar); // Output: I am a function variable declared with var
+    let blockVar = "Declared with let";
+    const blockConst = "Declared with const";
+    var varVariable = "Declared with var";
+
+    console.log(blockVar);
+    console.log(blockConst);
+    console.log(varVariable);
 }
 
-console.log(globalVar); // Output: I am a global variable
-console.log(functionVar); // Output: ReferenceError: functionVar is not defined
-console.log(blockVar); // Output: ReferenceError: blockVar is not defined
-console.log(varVar); // Output: I am a function variable declared with var
+console.log(varVariable);
 
-// shadowing
-let shadowVar = "I am a global variable";
 
-function shadowFunction() {
-    let shadowVar = "I am a function variable";
-    console.log(shadowVar); // Output: I am a function variable
+// Scope Example
+console.log("\nScope Accessibility:");
+
+function scopeExample() {
+    let localVar = "Local Variable";
+
+    console.log(globalVar);
+    console.log(localVar);
 }
 
-shadowFunction(); // Output: I am a function variable
-console.log(shadowVar); // Output: I am a global variable
+scopeExample();
 
-// hoisting
-console.log(hoistedVar); // Output: undefined
-var hoistedVar = "I am a hoisted variable";
-console.log(hoistedVar); // Output: I am a hoisted variable
-
-const hoistedConst;
-console.log(hoistedConst); // Output: ReferenceError: Cannot access 'hoistedConst' before initialization
-hoistedConst = "I am a hoisted constant";
-console.log(hoistedConst); // Output: I am a hoisted constants
-
-// function hoisting
-hoistedFunction(); // Output: I am a hoisted function
-function hoistedFunction() {
-    console.log("I am a hoisted function");
+try {
+    console.log(localVar);
+} catch (error) {
+    console.log(error.message);
 }
 
-hoistedArrowFunction(); // Output: TypeError: hoistedArrowFunction is not a function
-const hoistedArrowFunction = () => {
-    console.log("I am a hoisted arrow function");
+
+// Block Scope Example
+console.log("\nBlock Scope Accessibility:");
+
+if (true) {
+    let blockOnly = "Inside Block";
+    console.log(blockOnly);
 }
+
+try {
+    console.log(blockOnly);
+} catch (error) {
+    console.log(error.message);
+}
+
+
+// Variable Shadowing
+console.log("\nVariable Shadowing:");
+
+let message = "Global Message";
+
+function shadowExample() {
+    let message = "Function Message";
+
+    console.log(message);
+}
+
+shadowExample();
+
+console.log(message);
+
+
+// Nested Scope
+console.log("\nNested Scope:");
+
+let outer = "Outer Variable";
+
+function outerFunction() {
+    let inner = "Inner Variable";
+
+    function innerFunction() {
+        console.log(outer);
+        console.log(inner);
+    }
+
+    innerFunction();
+}
+
+outerFunction();
+
+
+// var Scope
+console.log("\nvar Scope:");
+
+function varExample() {
+
+    if (true) {
+        var x = 100;
+    }
+
+    console.log(x);
+}
+
+varExample();
+
+
+// let Scope
+console.log("\nlet Scope:");
+
+function letExample() {
+
+    if (true) {
+        let y = 200;
+        console.log(y);
+    }
+
+    try {
+        console.log(y);
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+letExample();
+
+
+// Hoisting with var
+console.log("\nHoisting - var:");
+
+console.log(myVar);
+
+var myVar = "Hoisted Variable";
+
+console.log(myVar);
+
+
+// Hoisting with let
+console.log("\nHoisting - let:");
+
+try {
+    console.log(myLet);
+} catch (error) {
+    console.log(error.message);
+}
+
+let myLet = "Block Scoped Variable";
+
+console.log(myLet);
+
+
+// Hoisting with const
+console.log("\nHoisting - const:");
+
+try {
+    console.log(myConst);
+} catch (error) {
+    console.log(error.message);
+}
+
+const myConst = "Constant Variable";
+
+console.log(myConst);
+
+
+// Function Hoisting
+console.log("\nFunction Hoisting:");
+
+greet();
+
+function greet() {
+    console.log("Hello from a hoisted function!");
+}
+
+
+// Function Expression Hoisting
+console.log("\nFunction Expression Hoisting:");
+
+try {
+    sayHello();
+} catch (error) {
+    console.log(error.message);
+}
+
+const sayHello = function () {
+    console.log("Hello from a function expression!");
+};
+
+sayHello();
+
+
+// Arrow Function Hoisting
+console.log("\nArrow Function Hoisting:");
+
+try {
+    welcome();
+} catch (error) {
+    console.log(error.message);
+}
+
+const welcome = () => {
+    console.log("Hello from an arrow function!");
+};
+
+welcome();
+
+
+// Temporal Dead Zone (TDZ)
+console.log("\nTemporal Dead Zone:");
+
+try {
+    console.log(tdzVar);
+} catch (error) {
+    console.log(error.message);
+}
+
+let tdzVar = "TDZ Example";
+
+console.log(tdzVar);
+
+
+// Summary
+console.log("\nSummary:");
+
+console.log("Global variables are accessible everywhere.");
+console.log("Function variables exist only inside functions.");
+console.log("Block variables (let/const) exist only inside blocks.");
+console.log("var is function-scoped.");
+console.log("let and const are block-scoped.");
+console.log("Only function declarations are fully hoisted.");
+console.log("let and const remain in the Temporal Dead Zone until initialized.");
