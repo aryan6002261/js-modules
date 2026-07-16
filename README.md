@@ -46,13 +46,18 @@ Each topic contains:
 - [x] DOM
 - [x] Events
 - [x] ES6+
+- [x] Advanced Functions
+- [x] Async JavaScript
+- [x] Fetch API
+- [x] Error Handling
+- [x] OOP
 - [ ] Modules
-- [ ] Async JavaScript
-- [ ] Fetch API
-- [ ] Promises
-- [ ] Async/Await
-- [ ] OOP
-- [ ] Mini Projects
+- [ ] Advanced Topics
+- [ ] Browser Storage
+- [ ] JSON
+- [ ] Regular Expressions
+- [ ] Best Practices
+- [ ] Projects
 
 ---
 
