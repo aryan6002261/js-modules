@@ -44,8 +44,8 @@ Each topic contains:
 - [x] Objects
 - [x] Strings
 - [x] DOM
-- [ ] Events
-- [ ] ES6+
+- [x] Events
+- [x] ES6+
 - [ ] Modules
 - [ ] Async JavaScript
 - [ ] Fetch API
