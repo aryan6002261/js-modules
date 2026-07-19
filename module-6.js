@@ -1,5 +1,5 @@
 // ===============================
-// Module 6/20 - JavaScript Basics
+// Module 6/25 - JavaScript Basics
 // Topic: Functions
 // ===============================
 

@@ -1,5 +1,5 @@
 // ===============================
-// Module 5/20 - JavaScript Basics
+// Module 5/25 - JavaScript Basics
 // Topic: Loops
 // ===============================
 

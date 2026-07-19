@@ -1,5 +1,5 @@
 // ===============================
-// Module 14/20 - JavaScript Basics
+// Module 14/25 - JavaScript Basics
 // Topic: Advanced Functions
 // ===============================
 

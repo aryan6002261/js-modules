@@ -1,5 +1,5 @@
 // ===============================
-// Module 13/20 - JavaScript Basics
+// Module 13/25 - JavaScript Basics
 // Topic: ES6 Features
 // ===============================
 

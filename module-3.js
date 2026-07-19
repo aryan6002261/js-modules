@@ -1,5 +1,5 @@
 // ===============================
-// Module 3/20 - JavaScript Basics
+// Module 3/25 - JavaScript Basics
 // Topic: Operators
 // ===============================
 

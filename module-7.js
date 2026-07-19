@@ -1,5 +1,5 @@
 // ===============================
-// Module 7/20 - JavaScript Basics
+// Module 7/25 - JavaScript Basics
 // Topic: Strings
 // ===============================
 

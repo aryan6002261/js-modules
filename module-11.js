@@ -1,5 +1,5 @@
 // ===============================
-// Module 11/20 - JavaScript Basics
+// Module 11/25 - JavaScript Basics
 // Topic: DOM Manipulation
 // ===============================
 

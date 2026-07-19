@@ -1,5 +1,5 @@
 // ===============================
-// Module 9/20 - JavaScript Basics
+// Module 9/25 - JavaScript Basics
 // Topic: Objects
 // ===============================
 

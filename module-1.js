@@ -1,5 +1,5 @@
 // ===============================
-// Module 1/20 - JavaScript Basics
+// Module 1/25 - JavaScript Basics
 // Topic: My First JavaScript Program
 // ===============================
 

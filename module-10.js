@@ -1,5 +1,5 @@
 // ===============================
-// Module 10/20 - JavaScript Basics
+// Module 10/25 - JavaScript Basics
 // Topic: Scope
 // ===============================
 

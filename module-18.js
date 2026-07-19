@@ -1,5 +1,5 @@
 // ===============================
-// Module 18/20 - JavaScript Basics
+// Module 18/25 - JavaScript Basics
 // Topic: Classes & Object-Oriented Programming
 // ===============================
 

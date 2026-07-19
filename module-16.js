@@ -1,5 +1,5 @@
 // ===============================
-// Module 16/20 - JavaScript Basics
+// Module 16/25 - JavaScript Basics
 // Topic: Fetch API
 // ===============================
 

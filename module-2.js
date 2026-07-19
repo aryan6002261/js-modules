@@ -1,5 +1,5 @@
 // ===============================
-// Module 2/20 - JavaScript Basics
+// Module 2/25 - JavaScript Basics
 // Topic: Variables & Data Types
 // ===============================
 

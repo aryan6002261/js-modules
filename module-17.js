@@ -1,5 +1,5 @@
 // ===============================
-// Module 17/20 - JavaScript Basics
+// Module 17/25 - JavaScript Basics
 // Topic: Exception Handling
 // ===============================
 

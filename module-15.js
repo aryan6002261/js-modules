@@ -1,5 +1,5 @@
 // ===============================
-// Module 15/20 - JavaScript Basics
+// Module 15/25 - JavaScript Basics
 // Topic: Asynchronous JavaScript
 // ===============================
 

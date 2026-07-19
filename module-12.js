@@ -1,5 +1,5 @@
 // ===============================
-// Module 12/20 - JavaScript Basics
+// Module 12/25 - JavaScript Basics
 // Topic: Events
 // ===============================
 

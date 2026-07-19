@@ -1,5 +1,5 @@
 // ===============================
-// Module 8/20 - JavaScript Basics
+// Module 8/25 - JavaScript Basics
 // Topic: Arrays
 // ===============================
 
