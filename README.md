@@ -52,8 +52,8 @@ Each topic contains:
 - [x] Error Handling
 - [x] OOP
 - [x] Modules
-- [ ] Advanced Topics
-- [ ] Browser Storage
+- [x] Advanced Topics
+- [x] Browser Storage
 - [ ] JSON
 - [ ] Regular Expressions
 - [ ] Best Practices
