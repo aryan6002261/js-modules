@@ -51,7 +51,7 @@ Each topic contains:
 - [x] Fetch API
 - [x] Error Handling
 - [x] OOP
-- [ ] Modules
+- [x] Modules
 - [ ] Advanced Topics
 - [ ] Browser Storage
 - [ ] JSON
